@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-root to: "home#index"
+
+  root to: 'pages#index'
+
+  get 'pages/contact'
+
+  get 'pages/about'
+
+
 end
