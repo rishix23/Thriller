@@ -36,13 +36,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass', '~> 4.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'pg', '~> 1.1', '>= 1.1.3'
+  gem 'sqlite3'
 end
 
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
@@ -55,5 +56,6 @@ group :production do
   gem 'rails_12factor', '~> 0.0.2'
   gem 'pg', '~> 1.1', '>= 1.1.3'
 end 
+
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
