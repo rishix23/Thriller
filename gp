@@ -1,4 +1,4 @@
 git add -A
-git commit -m "Contact page setup"
+git commit -m "Third Model"
 git push origin master
 git push heroku master
