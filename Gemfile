@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'font-awesome-sass', '~> 4.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
 
 group :development, :test do

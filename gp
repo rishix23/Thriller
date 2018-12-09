@@ -1,4 +1,4 @@
 git add -A
-git commit -m "Stable Version"
+git commit -m "Final Stage"
 git push origin master
 git push heroku master
