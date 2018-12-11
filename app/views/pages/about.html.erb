@@ -9,3 +9,45 @@
 </ul>
 </div>
 </div>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+ 
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">About</div>
+<div id="panel"><!--About Page-->
+<div class="row">
+<div class="col-lg-12 text-center">
+<h1>About Us</h1>
+<p class="lead">We are an article site where you can post an article, read an article, and comment on any article!</p>
+<ul class="list-unstyled">
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+
+</body>

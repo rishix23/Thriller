@@ -3,9 +3,9 @@
 one:
   body: MyText
   user: one
-  article: 
+  article: text
 
 two:
   body: MyText
   user: two
-  article: 
+  article: text

@@ -1,8 +1,16 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionDispatch::IntegrationTest
+include Devise::Test::IntegrationHelpers
+
+setup do 
+@article = articles(:one)
+@user = users(:one)
+sign_in @user
+end
+
   test "should get index" do
-    get pages_index_url
+    get articles_url
     assert_response :success
   end
 

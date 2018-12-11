@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class ArticlesControllerTest < ActionDispatch::IntegrationTest
+include Devise::Test::IntegrationHelpers
   setup do
     @article = articles(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do

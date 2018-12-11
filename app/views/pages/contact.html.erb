@@ -1,4 +1,32 @@
-<div class="row">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+ 
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Contact</div>
+<div id="panel"><div class="row">
    <div class="col-lg-12 text-center">
        <h1>Contact Us</h1>
        <p class="lead">Use this quick and easy form to fill out any concerns or reviews and we will get back to you!</p>
@@ -8,4 +36,6 @@
       <div class="col-lg-4 text-center">
    <%= render 'pages/mailer' %>
       </div>
-</div>
+</div></div>
+
+</body>
