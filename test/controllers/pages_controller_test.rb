@@ -17,6 +17,7 @@ end
   test "should get contact" do
     get pages_contact_url
     assert_response :success
+    assert_select 'h1', "Contact Us"
   end
 
   test "should get about" do
