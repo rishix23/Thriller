@@ -20,4 +20,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: Article Share
+  app_description: Able to post articles and post comments
+  
+  pages:
+    index:
+      title: Article Share!
+      welcome: Share your article!
+      
+    contact:
+      title: Contact 
+      contact_us: Use this quick and easy form to fill out any concerns or reviews and we will get back to you!
+      
+      name: "Name:"
+      email: "Email:"
+      message: "Message"
+      submit: Get in touch!
+      
+    about:
+      title: About
+      about_us: We are an article site where you can post an article, read an article, and comment on any article!
+    
