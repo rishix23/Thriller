@@ -1,9 +1,9 @@
 class ContactsController < ApplicationController
-
+#method for new contact
  def new
  @contact = Contact.new
  end
-
+#method for new contact create with given parameters
  def create
  @contact = Contact.new(contact_params)
  if @contact.save
@@ -23,7 +23,7 @@ class ContactsController < ApplicationController
 
 
  private
-
+#method showing the contact parameters
  def contact_params
  params.require(:contact).permit(:name, :email, :message)
  end
